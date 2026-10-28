@@ -1,0 +1,24 @@
+{
+  "name": "techfest-ca-ideate-landing",
+  "version": "1.0.0",
+  "description": "SYNAPSE 2026 // Premium Sci-Fi College Technology Festival Platform",
+  "type": "module",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run api\" \"npm run dev:client\"",
+    "api": "node api/index.js",
+    "dev:all": "concurrently \"npm run api\" \"npm run dev:client\"",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

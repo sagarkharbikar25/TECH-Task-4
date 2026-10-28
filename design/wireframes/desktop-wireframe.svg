@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080C"/>
+      <stop offset="50%" stop-color="#130715"/>
+      <stop offset="100%" stop-color="#381932"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#9D4EDD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="900" y1="0" x2="900" y2="900"/>
+  </g>
+
+  <!-- Navbar Wireframe -->
+  <rect x="50" y="20" width="1100" height="50" rx="12" fill="#08080C" fill-opacity="0.8" stroke="#ffffff" stroke-opacity="0.15"/>
+  <rect x="75" y="32" width="26" height="26" rx="6" fill="#381932" stroke="#00F0FF"/>
+  <text x="115" y="50" fill="#FFF3E6" font-family="monospace" font-size="14" font-weight="bold">SYNAPSE.26</text>
+  <text x="450" y="49" fill="#FFF3E6" fill-opacity="0.6" font-family="monospace" font-size="11">FLAGSHIPS   BENTO   MATCHER   KEYNOTES   FAQ</text>
+  <rect x="1000" y="30" width="130" height="30" rx="8" fill="url(#cyanPurple)"/>
+  <text x="1025" y="50" fill="#08080C" font-family="monospace" font-size="11" font-weight="bold">CLAIM PASS</text>
+
+  <!-- Hero Wireframe -->
+  <text x="600" y="140" text-anchor="middle" fill="#00F0FF" font-family="monospace" font-size="12" letter-spacing="3">// ANNUAL TECHFEST CONVERGENCE</text>
+  <text x="600" y="200" text-anchor="middle" fill="#FFF3E6" font-family="monospace" font-size="44" font-weight="900">TRANSCEND THE QUANTUM GRID</text>
+  
+  <!-- Central 3D Quantum Core Indicator -->
+  <circle cx="600" cy="300" r="70" fill="#381932" stroke="#9D4EDD" stroke-width="2"/>
+  <polygon points="600,240 660,270 660,330 600,360 540,330 540,270" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <circle cx="600" cy="300" r="100" fill="none" stroke="#FFF3E6" stroke-opacity="0.2" stroke-dasharray="4,4"/>
+
+  <!-- Registration Input Wireframe -->
+  <rect x="420" y="390" width="360" height="44" rx="12" fill="#08080C" stroke="#ffffff" stroke-opacity="0.2"/>
+  <text x="440" y="417" fill="#FFF3E6" fill-opacity="0.4" font-family="monospace" font-size="11">Enter university email...</text>
+  <rect x="680" y="395" width="94" height="34" rx="8" fill="url(#cyanPurple)"/>
+  <text x="698" y="417" fill="#08080C" font-family="monospace" font-size="10" font-weight="bold">JOIN GRID</text>
+
+  <!-- Telemetry Bar -->
+  <rect x="150" y="460" width="900" height="70" rx="14" fill="#130715" fill-opacity="0.9" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="220" y="500" fill="#FFF3E6" font-family="monospace" font-size="16" font-weight="bold">₹25L+ PRIZE</text>
+  <text x="440" y="500" fill="#FFF3E6" font-family="monospace" font-size="16" font-weight="bold">50K+ ATTENDEES</text>
+  <text x="700" y="500" fill="#FFF3E6" font-family="monospace" font-size="16" font-weight="bold">16 ARENAS</text>
+  <text x="910" y="500" fill="#FFF3E6" font-family="monospace" font-size="16" font-weight="bold">180+ COLLEGES</text>
+
+  <!-- Bento Section Wireframe -->
+  <text x="600" y="580" text-anchor="middle" fill="#00F0FF" font-family="monospace" font-size="11">// BENTO SECTOR HUB</text>
+  <rect x="150" y="605" width="440" height="120" rx="14" fill="#0E0612" stroke="#00F0FF" stroke-opacity="0.4"/>
+  <text x="180" y="640" fill="#00F0FF" font-family="monospace" font-size="10">WORKSHOP</text>
+  <text x="180" y="665" fill="#FFF3E6" font-family="sans-serif" font-size="16" font-weight="bold">Neural Swarm Robotics Lab</text>
+
+  <rect x="610" y="605" width="440" height="120" rx="14" fill="#0E0612" stroke="#9D4EDD" stroke-opacity="0.4"/>
+  <text x="640" y="640" fill="#9D4EDD" font-family="monospace" font-size="10">ADVANCED PROTOCOL</text>
+  <text x="640" y="665" fill="#FFF3E6" font-family="sans-serif" font-size="16" font-weight="bold">Quantum Crypto Accelerator</text>
+
+  <!-- Pinned Flagship Corridors Wireframe -->
+  <rect x="150" y="745" width="280" height="130" rx="14" fill="#110614" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="170" y="780" fill="#FFF3E6" font-family="sans-serif" font-size="14" font-weight="bold">Robowars Titan</text>
+  
+  <rect x="450" y="745" width="280" height="130" rx="14" fill="#110614" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="470" y="780" fill="#FFF3E6" font-family="sans-serif" font-size="14" font-weight="bold">Quantum AI Hack</text>
+
+  <rect x="750" y="745" width="300" height="130" rx="14" fill="#110614" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="770" y="780" fill="#FFF3E6" font-family="sans-serif" font-size="14" font-weight="bold">Drone Prix Sprint</text>
+</svg>

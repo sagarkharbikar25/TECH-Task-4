@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-space: 'Space Grotesk', sans-serif;
+
+  --color-void: #08080C;
+  --color-void-plum: #130715;
+  --color-plum: #381932;
+  --color-plum-light: #5A2950;
+  --color-milk: #FFF3E6;
+  --color-milk-muted: #EEDCC9;
+  --color-cyan: #00F0FF;
+  --color-purple: #9D4EDD;
+  --color-gold: #E69D67;
+}
+
+:root {
+  --bg-primary: #08080C;
+  --text-primary: #FFF3E6;
+  color-scheme: dark;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #08080C;
+  color: #FFF3E6;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080C;
+}
+::-webkit-scrollbar-thumb {
+  background: #381932;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A2950;
+}
+
+/* CRT Scanline & Grid Effect Utilities */
+.cyber-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 243, 230, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 243, 230, 0.03) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+}
+
+.glass-panel {
+  background: rgba(19, 7, 21, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 243, 230, 0.08);
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 20px rgba(157, 78, 221, 0.6), 0 0 40px rgba(157, 78, 221, 0.2);
+}
+
+.text-glow-milk {
+  text-shadow: 0 0 15px rgba(255, 243, 230, 0.5);
+}
+
+/* Keyframe animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes laserScan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-laser-scan {
+  animation: laserScan 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
